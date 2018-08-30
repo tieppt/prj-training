@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { ColorPickerComponent } from './color-picker/color-picker.component';
+import { FontSizeEditorComponent } from './font-size-editor/font-size-editor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     CalculatorComponent,
-    ColorPickerComponent
+    ColorPickerComponent,
+    FontSizeEditorComponent
   ],
   imports: [
     BrowserModule,
