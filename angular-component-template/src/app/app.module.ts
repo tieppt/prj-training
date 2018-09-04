@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 import { CountdownTimerGetSetComponent } from './countdown-timer-get-set/countdown-timer-get-set.component';
-import { CountdownTimerOnchangeComponent } from './countdown-timer-onchange/countdown-timer-onchange.component';
 import { CountdownTimerOnchangesComponent } from './countdown-timer-onchanges/countdown-timer-onchanges.component';
 import { CountdownTimerAliasComponent } from './countdown-timer-alias/countdown-timer-alias.component';
 import { CountdownTimerEventComponent } from './countdown-timer-event/countdown-timer-event.component';
@@ -23,7 +22,6 @@ import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
     AppComponent,
     CountdownTimerComponent,
     CountdownTimerGetSetComponent,
-    CountdownTimerOnchangeComponent,
     CountdownTimerOnchangesComponent,
     CountdownTimerAliasComponent,
     CountdownTimerEventComponent,
