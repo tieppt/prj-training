@@ -7,3 +7,4 @@ Thứ tự bài học
 3. [angular-form](angular-form)
 4. [angular-service-router](angular-service-router)
 5. [angular-ngmodule-dependency-injection](ngmodule-dependency-injection)
+5. [angular-httpclient](angular-http)
