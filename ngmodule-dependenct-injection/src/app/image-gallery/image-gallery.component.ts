@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, Optional } from '@angular/core';
+import { GalleryConfig } from './token';
 
 @Component({
   selector: 'app-image-gallery',
@@ -12,9 +13,19 @@ export class ImageGalleryComponent implements OnInit {
     'https://via.placeholder.com/1280x420/e91e63/ffffff?text=3',
     'https://via.placeholder.com/1280x420/e91e63/ffffff?text=4'
   ];
-  constructor() { }
-
-  ngOnInit() {
+  itemWidth: number;
+  config = 4;
+  constructor(
+    @Inject(GalleryConfig)
+    @Optional()
+    config: number
+  ) {
+    if (config) {
+      this.config = config;
+    }
   }
 
+  ngOnInit() {
+    this.itemWidth = 100 / this.config;
+  }
 }
