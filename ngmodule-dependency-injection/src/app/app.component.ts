@@ -7,6 +7,6 @@ import { AuthService } from './auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngmodule-dependenct-injection';
+  title = 'ngmodule-dependency-injection';
   constructor(public authService: AuthService) {}
 }

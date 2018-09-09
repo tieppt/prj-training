@@ -13,15 +13,15 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
-  it(`should have as title 'ngmodule-dependenct-injection'`, async(() => {
+  it(`should have as title 'ngmodule-dependency-injection'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngmodule-dependenct-injection');
+    expect(app.title).toEqual('ngmodule-dependency-injection');
   }));
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngmodule-dependenct-injection!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngmodule-dependency-injection!');
   }));
 });

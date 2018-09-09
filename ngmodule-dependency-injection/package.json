@@ -1,5 +1,5 @@
 {
-  "name": "ngmodule-dependenct-injection",
+  "name": "ngmodule-dependency-injection",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

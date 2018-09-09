@@ -9,6 +9,6 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to ngmodule-dependenct-injection!');
+    expect(page.getParagraphText()).toEqual('Welcome to ngmodule-dependency-injection!');
   });
 });
