@@ -18,3 +18,26 @@
   </li>
 </ul>
 
+<app-img-slider>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=1" alt="">
+  </app-img-slide>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=2" alt="">
+  </app-img-slide>
+  <app-img-slide>
+    <img src="https://via.placeholder.com/1280x420/e91e63/ffffff?text=3" alt="">
+  </app-img-slide>
+</app-img-slider>
+
+<app-image-gallery></app-image-gallery>
+
+
+<app-content-projection>
+  <app-content-child></app-content-child>
+</app-content-projection>
+
+<h2>From service</h2>
+<input type="text"
+  [value]="authService.user"
+  (input)="authService.user = $event.target.value">

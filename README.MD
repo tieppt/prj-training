@@ -6,3 +6,4 @@ Thứ tự bài học
 2. [angular-component-template](angular-component-template)
 3. [angular-form](angular-form)
 4. [angular-service-router](angular-service-router)
+5. [angular-ngmodule-dependency-injection](ngmodule-dependency-injection)
