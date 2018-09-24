@@ -56,8 +56,18 @@
       <label><input type="radio" formControlName="gender" value="female">Female</label>
     </div>
   </div>
-  <div class="alert alert-danger" role="alert" *ngIf="registerForm.get('gender').invalid">
+  <div class="alert alert-danger" role="alert" *ngIf="registerForm.get('gender').invalid && registerForm.get('gender').touched">
     Gender is required!
+  </div>
+  <div class="form-group row">
+    <label class="col">
+      Phone
+      <input type="tel" class="form-control" formControlName="phone" placeholder="+841234567890">
+    </label>
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="registerForm.get('phone').invalid && registerForm.get('phone').touched">
+    <span *ngIf="registerForm.get('phone').hasError('required')">Phone is required</span>
+    <span *ngIf="registerForm.get('phone').hasError('pattern')">Phone must start with +84 followed by 9 or 10 digits.</span>
   </div>
   <div class="form-group">
     <button class="btn btn-info" type="submit">Submit</button>
