@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from './auth.guard';
+import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
 import { DictionaryPageComponent } from './dictionary-page/dictionary-page.component';
 import { HomeComponent } from './home/home.component';
-import { DictionaryDetailComponent } from './dictionary-detail/dictionary-detail.component';
-import { AuthGuard } from './auth.guard';
+import { LoginStep1Component } from './login-step1/login-step1.component';
+import { LoginStep2Component } from './login-step2/login-step2.component';
 import { TimelinesComponent } from './timelines/timelines.component';
-import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 import { YoutubePlayerComponent } from './youtube-player/youtube-player.component';
+import { YoutubePlaylistComponent } from './youtube-playlist/youtube-playlist.component';
 
 const routes: Routes = [
   {
@@ -38,6 +40,14 @@ const routes: Routes = [
       path: ':id',
       component: YoutubePlayerComponent
     }]
+  },
+  {
+    path: 'login-step-1',
+    component: LoginStep1Component
+  },
+  {
+    path: 'login-step-2',
+    component: LoginStep2Component
   }
 ];
 
